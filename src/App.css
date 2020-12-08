@@ -1,0 +1,225 @@
+
+.form-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  z-index: -1;
+  background-image: url("https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+  background-size: cover;
+  filter: brightness(0.9);
+}
+
+.auth-form-login {
+  background-color:rgba(0, 0, 0, 0.603);
+  border-radius: 10px;
+  padding: 0 1em;
+  margin: 6em auto;
+  height: 285px;
+  width: 500px;
+  color: white;
+  font-family: 'Russo One', sans-serif;
+  align-content: center;
+}
+
+.auth-form-login h2 {
+  text-align: center;
+  position: relative;
+}
+
+.auth-form-login input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 0 0.75em;
+  border-radius: 8px; 
+}
+
+.auth-form-login button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid white;
+  outline: none;
+  color: white;
+  font-size: larger;
+  border-radius: 8px;
+  padding: 0 15px 5px;
+  position: relative;
+  margin: 10px 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.auth-form-register {
+  background-color:rgba(0, 0, 0, 0.603);
+  border-radius: 10px;
+  padding: 0 1em;
+  margin: 6em auto;
+  height: 375px;
+  width: 500px;
+  color: white;
+  font-family: 'Russo One', sans-serif;
+  align-content: center;
+}
+
+.auth-form-register h2 {
+  text-align: center;
+  position: relative;
+}
+
+.auth-form-register input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 0 0.75em;
+  border-radius: 8px; 
+}
+
+.auth-form-register button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid white;
+  outline: none;
+  color: white;
+  font-size: larger;
+  border-radius: 8px;
+  padding: 0 15px 5px;
+  position: relative;
+  margin: 10px 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.auth-form button:focus {
+  outline: none;
+}
+
+.navbar-brand {
+  font-family: 'Russo One', sans-serif;
+  color: white;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.493) ;
+}
+.nav-button {
+  color: white;
+  font-family: 'Russo One', sans-serif;
+  cursor: pointer;
+  margin-left: 1.5em;
+}
+
+.nav-button:hover {
+  color: white;
+  font-family: 'Russo One', sans-serif;
+  text-decoration: none;
+}
+
+.reg-error {
+  color: red;
+  font-family: 'Russo One', sans-serif;
+  margin-left: 1em;
+}
+
+.calendar-container,
+.calendar,
+.calendar-header,
+td,
+tr {
+    padding: 0;
+    margin: 0;
+}
+
+.calendar-container {
+    border: 2px solid skyblue;
+}
+
+.calendar {
+    background-color: white;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.calendar-header {
+    border-bottom: 1px dashed skyblue;
+    font-size: 1.6em;
+}
+
+.calendar-header td {
+    border-spacing: 0;
+    padding-left: 5px;
+}
+
+.day,
+.empty-slot,
+.week-day {
+    text-align: center;
+    height: 40px;
+}
+
+.week-day {
+    font-size: 0.8em;
+}
+
+.day {
+    font-size: 0.8em;
+}
+
+.day {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.current-day {
+    background-color: #4285f4;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 2%;
+    color: white;
+}
+.selected-day {
+    background-color:yellow;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 2%;
+    color: black;
+}
+
+.month-popup {
+    position: absolute;
+    padding: 5px;
+    background: white;
+    border: 2px solid skyblue;
+}
+
+.month-popup div {
+    padding: 0.3em;
+}
+
+.nav-month {
+    position: absolute;
+    top: 0.6em;
+    font-size: 0.6em;
+    right:3px;
+}
+
+.editor-year {
+    max-width: 3.6em;
+}
+
+.label-month,
+.label-year {
+    font-size: 0.6em;
+}
+
+.label-month {
+    cursor: pointer;
+}
