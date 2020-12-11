@@ -1,5 +1,4 @@
-
-import "./App.css";
+import "./App.css"
 import { useEffect, useState } from "react";
 //import { Link, Route, Switch, BrowserRouter as Router } from "react-router-dom";
 
@@ -10,12 +9,14 @@ import RegisterComponent from "./Components/LoginRegister/Register";
 import NavbarComponent from "./Components/NavBar/NavBar";
 import MainComponent from "./Components/Main/main";
 import UploadComponent from "./Components/FileUpload/FileUpload";
+//import ImageGrid from "./Components/FileUpload/ImageGrid";
+//import Modal from "./Components/FileUpload/modal";
 
 function App() {
   const [token, setToken] = useState(null);
   const [isLogin, setIsLogin] = useState(true);
   const [view, setView] = useState("home");
-  //const [selectedImg, setSelectedImg] = useState(null);
+ //const [selectedImg, setSelectedImg] = useState(null);
 
   const changeView = (newView) => {
    setView(newView);
@@ -65,7 +66,12 @@ function App() {
           </>
         ) : 
         view === "saved" ? (
-          <UploadComponent changeView={changeView} />
+          <>
+         
+          <UploadComponent />
+        
+            )
+            </>
         ) : (
           <h1>INVALID VIEW</h1>
         )

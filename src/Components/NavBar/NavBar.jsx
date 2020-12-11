@@ -12,7 +12,7 @@ const NavbarComponent = (props) => {
   // const toggle = () => setIsOpen(!isOpen);
   return (
     <Navbar dark expand="md">
-      <NavbarBrand href="/">Concert Junkie</NavbarBrand>
+      <NavbarBrand href="/">Event Junkie</NavbarBrand>
       {/* <NavbarToggler onClick={toggle} /> */}
       {/* <Collapse isOpen={isOpen} navbar> */}
       <Nav className="ml-auto"> 
@@ -31,14 +31,6 @@ const NavbarComponent = (props) => {
               <a
               href="!#"
                 className="nav-button"
-                onClick={() => props.changeView("saved")}
-              >
-                Your Music
-              </a>
-            </NavItem>
-            <NavItem>
-              <a
-                className="nav-button"
                 onClick={(e) => props.deleteSessionToken()}
               >
                 Logout
@@ -49,7 +41,7 @@ const NavbarComponent = (props) => {
           <>
             <NavItem>
               {props.isLogin ? (
-                <a className="nav-button" onClick={props.toggleLogin}>
+                <a href="!#" className="nav-button" onClick={props.toggleLogin}>
                   Register
                 </a>
               ) : (

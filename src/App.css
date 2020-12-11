@@ -1,3 +1,7 @@
+img {
+  max-width: 100%;
+  width: 100%;
+}
 
 .form-background {
   position: absolute;
@@ -124,102 +128,128 @@
   margin-left: 1em;
 }
 
-.calendar-container,
-.calendar,
-.calendar-header,
-td,
-tr {
-    padding: 0;
-    margin: 0;
+
+
+
+/* base styles & title */
+.PhotoForm{
+  background: rgb(121, 7, 7);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  
+} 
+
+.ImageTitle h2{
+  color: white;
+  font-family: 'Russo One', sans-serif;
+  font-size: 5rem;
+  letter-spacing: 1px;
+  font-weight: normal;
+  text-align: center;
+}
+ .ImageTitle p{
+  text-align: center;
+  color: white;
+  font-family: 'Russo One', sans-serif;
 }
 
-.calendar-container {
-    border: 2px solid skyblue;
+
+/* upload form styles */
+/* #imageForm{
+  margin: 30px auto 10px;
+  text-align: center;
+  color: white;
 }
 
-.calendar {
-    background-color: white;
-    border-spacing: 0;
-    border-collapse: collapse;
-    width: 100%;
+#imageLabel input{
+  height: 0;
+  width: 0;
+  opacity: 0;
+} */
+
+/*#imageLabel{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid navy;
+
+  border-radius: 50%;
+  margin: 10px auto;
+  line-height: 30px;
+  color: navy;
+  font-weight: bold;
+  font-size: 24px;
 }
 
-.calendar-header {
-    border-bottom: 1px dashed skyblue;
-    font-size: 1.6em;
+
+#imageLabel:hover{
+  background: navy;
+
+  color: white;
+}*/
+
+.output{
+  height: 60px;
+  font-size: 0.8rem;
+}
+.error{
+  color: red;
 }
 
-.calendar-header td {
-    border-spacing: 0;
-    padding-left: 5px;
+
+ 
+/* .img-wrap{
+  overflow: hidden;
+  height: 0;
+  padding: 50% 0;
+  /* padding controls height, will always be perfectly square regardless of width */
+  /* position: relative;
+  opacity: 0.8;
+}
+.img-wrap img{
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 150%;
+  position: absolute;
+  top: 0;
+  left: 0;
+} */ */
+
+
+.mainpage {
+  background: url("https://kissjonesboro.com/wp-content/uploads/sites/149/concert-red-background.jpg");
 }
 
-.day,
-.empty-slot,
-.week-day {
-    text-align: center;
-    height: 40px;
+.container{
+  background-color: rgb(121, 7, 7);
+  color: white;
 }
 
-.week-day {
-    font-size: 0.8em;
+#location {
+  text-align: center;
+  color: white;
+  font-family: 'Russo One', sans-serif;
+  font-size: 70px;
+  background-color: rgba(0, 0, 0, 0.507);
+  border-radius: 40px;
+ 
 }
 
-.day {
-    font-size: 0.8em;
+/* #events {
+  background-color: rgba(0, 0, 0, 0.63);
+  font-family: 'Russo One', sans-serif;
+  color: white;
 }
 
-.day {
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-    line-height: 24px;
-}
+.eventImage {
+  width: 200px;
+  height: 300px;
+} */
 
-.current-day {
-    background-color: #4285f4;
-    width: 28px;
-    height: 28px;
-    line-height: 28px;
-    border-radius: 2%;
-    color: white;
-}
-.selected-day {
-    background-color:yellow;
-    width: 28px;
-    height: 28px;
-    line-height: 28px;
-    border-radius: 2%;
-    color: black;
-}
-
-.month-popup {
-    position: absolute;
-    padding: 5px;
-    background: white;
-    border: 2px solid skyblue;
-}
-
-.month-popup div {
-    padding: 0.3em;
-}
-
-.nav-month {
-    position: absolute;
-    top: 0.6em;
-    font-size: 0.6em;
-    right:3px;
-}
-
-.editor-year {
-    max-width: 3.6em;
-}
-
-.label-month,
-.label-year {
-    font-size: 0.6em;
-}
-
-.label-month {
-    cursor: pointer;
-}
+/* #Upload{
+  background:url('https://kissjonesboro.com/wp-content/uploads/sites/149/concert-red-background.jpg');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
